@@ -1,0 +1,13 @@
+- hosts: hostB
+  tasks:
+      - name: Create file
+        file:
+            path: /tmp/yallo
+            state: touch
+ 
+- hosts: my_hosts
+  sudo: yes
+  tasks:
+      - name: Create user
+        user:
+            name: mario

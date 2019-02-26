@@ -1,0 +1,7 @@
+
+- name: Gather info
+  hosts: 10.0.0.7
+  tasks:
+    - debug: var=vars
+    - debug: var=ansible_bios_date
+

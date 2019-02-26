@@ -1,0 +1,12 @@
+---
+- name: Run Updates
+  hosts: 10.0.0.7
+  connection: winrm
+
+  tasks:
+  - win_updates:
+      category_names:
+        - DefinitionUpdates
+        - SecurityUpdates
+        - Updates
+
